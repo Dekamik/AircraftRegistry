@@ -1,9 +1,11 @@
 package se.dennisvonbargen.aircraftregistry
 
+import se.dennisvonbargen.aircraftregistry.integration.DataAccessObject
+
 /**
  * Created by Dennis on 2016-06-01.
  */
-class RegistryFunctions {
+class RegistryFunctions (private val dao: DataAccessObject) {
 
     internal fun list_aircraft() {
 
